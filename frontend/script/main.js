@@ -32,7 +32,6 @@ setInterval(() => {
     hitungMundur();
 }, 1000);
 
-// Ambil elemen formulir, wadah kartu ucapan, dan indeks kartu ucapan
 const form = document.getElementById('greeting-card-form');
 const greetingCardsContainer = document.getElementById('scroll-kartu');
 let cardIndex = 1;
@@ -57,12 +56,27 @@ form.addEventListener('submit', function(event) {
   // Tambahkan kartu ucapan ke dalam wadah kartu ucapan
   greetingCardsContainer.innerHTML += cardContent;
 
+  // Simpan kartu ucapan ke dalam LocalStorage
+  localStorage.setItem(`card-${cardIndex}`, cardContent);
+
   // Reset formulir
   form.reset();
 
   // Tambahkan 1 ke indeks kartu ucapan
   cardIndex++;
 });
+
+// Cek apakah ada kartu ucapan yang disimpan di LocalStorage saat halaman dimuat
+window.addEventListener('DOMContentLoaded', function() {
+  for (let i = 1; i <= localStorage.length; i++) {
+    const cardContent = localStorage.getItem(`card-${i}`);
+    if (cardContent) {
+      greetingCardsContainer.innerHTML += cardContent;
+      cardIndex++;
+    }
+  }
+});
+
 
 function copyRekening(elementId) {
   const rekElement = document.getElementById(elementId);
