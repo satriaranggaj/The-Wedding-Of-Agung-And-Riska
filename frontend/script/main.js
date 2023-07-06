@@ -11,6 +11,12 @@ function buka(){
     cover.style.visibility = 'hidden';
     cover.style.opacity = '0';
     cover.style.height = '0';
+
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
 }
 
 let launchDate = "29 July 2023 09:00 AM";
@@ -32,50 +38,50 @@ setInterval(() => {
     hitungMundur();
 }, 1000);
 
-const form = document.getElementById('greeting-card-form');
-const greetingCardsContainer = document.getElementById('scroll-kartu');
-let cardIndex = 1;
+// const form = document.getElementById('greeting-card-form');
+// const greetingCardsContainer = document.getElementById('scroll-kartu');
+// let cardIndex = 1;
 
-// Tangani pengiriman formulir
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+// // Tangani pengiriman formulir
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault();
 
-  // Ambil nilai dari input dan textarea
-  const senderName = document.getElementById('sender-name').value;
-  const message = document.getElementById('message').value;
+//   // Ambil nilai dari input dan textarea
+//   const senderName = document.getElementById('sender-name').value;
+//   const message = document.getElementById('message').value;
 
-  // Buat kartu ucapan menggunakan nilai yang diambil
-  const cardContent = `
-    <div class="greeting-card" id="card-${cardIndex}">
-      <h6>${senderName}</h6>
-      <hr>
-      <p>${message}</p>
-    </div>
-  `;
+//   // Buat kartu ucapan menggunakan nilai yang diambil
+//   const cardContent = `
+//     <div class="greeting-card" id="card-${cardIndex}">
+//       <h6>${senderName}</h6>
+//       <hr>
+//       <p>${message}</p>
+//     </div>
+//   `;
 
-  // Tambahkan kartu ucapan ke dalam wadah kartu ucapan
-  greetingCardsContainer.innerHTML += cardContent;
+//   // Tambahkan kartu ucapan ke dalam wadah kartu ucapan
+//   greetingCardsContainer.innerHTML += cardContent;
 
-  // Simpan kartu ucapan ke dalam LocalStorage
-  localStorage.setItem(`card-${cardIndex}`, cardContent);
+//   // Simpan kartu ucapan ke dalam LocalStorage
+//   localStorage.setItem(`card-${cardIndex}`, cardContent);
 
-  // Reset formulir
-  form.reset();
+//   // Reset formulir
+//   form.reset();
 
-  // Tambahkan 1 ke indeks kartu ucapan
-  cardIndex++;
-});
+//   // Tambahkan 1 ke indeks kartu ucapan
+//   cardIndex++;
+// });
 
-// Cek apakah ada kartu ucapan yang disimpan di LocalStorage saat halaman dimuat
-window.addEventListener('DOMContentLoaded', function() {
-  for (let i = 1; i <= localStorage.length; i++) {
-    const cardContent = localStorage.getItem(`card-${i}`);
-    if (cardContent) {
-      greetingCardsContainer.innerHTML += cardContent;
-      cardIndex++;
-    }
-  }
-});
+// // Cek apakah ada kartu ucapan yang disimpan di LocalStorage saat halaman dimuat
+// window.addEventListener('DOMContentLoaded', function() {
+//   for (let i = 1; i <= localStorage.length; i++) {
+//     const cardContent = localStorage.getItem(`card-${i}`);
+//     if (cardContent) {
+//       greetingCardsContainer.innerHTML += cardContent;
+//       cardIndex++;
+//     }
+//   }
+// });
 
 
 function copyRekening(elementId) {
