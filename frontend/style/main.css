@@ -74,6 +74,8 @@ body {
 .container.induk #cover .title {
   width: 100%;
   margin-top: 25px;
+  -webkit-animation: animationFadeDown 1s ease 1 forwards;
+          animation: animationFadeDown 1s ease 1 forwards;
 }
 
 .container.induk #cover .title h2 {
@@ -86,6 +88,8 @@ body {
 .container.induk #cover .subtitle {
   width: 100%;
   margin-bottom: 145px;
+  -webkit-animation: animationFadeUp 1s ease 1 forwards;
+          animation: animationFadeUp 1s ease 1 forwards;
 }
 
 .container.induk #cover .subtitle p {
@@ -98,6 +102,8 @@ body {
 .container.induk #cover .name-man {
   width: 35%;
   text-align: start;
+  -webkit-animation: animationFadeRight 1s ease 1 forwards;
+          animation: animationFadeRight 1s ease 1 forwards;
 }
 
 .container.induk #cover .name-man h3 {
@@ -119,6 +125,8 @@ body {
   text-align: end;
   padding: 0 10px 0 0;
   margin-bottom: 20px;
+  -webkit-animation: animationFadeLeft 1s ease 1 forwards;
+          animation: animationFadeLeft 1s ease 1 forwards;
 }
 
 .container.induk #cover .name-woman h3 {
@@ -139,6 +147,8 @@ body {
   border-radius: 35px;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: animationFadeUp 1s ease 1 forwards;
+          animation: animationFadeUp 1s ease 1 forwards;
 }
 
 .container.induk #cover .open-button a {
@@ -161,6 +171,8 @@ body {
   width: 100%;
   max-height: 325px;
   color: #7d684c;
+  -webkit-animation: animationFadeIn 1s ease 1 forwards;
+          animation: animationFadeIn 1s ease 1 forwards;
 }
 
 .container.induk #dalil div {
@@ -530,5 +542,135 @@ body {
 
 .container.induk footer p a {
   color: #7d684c;
+}
+
+@-webkit-keyframes animationFadeDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animationFadeDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animationFadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animationFadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animationFadeRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animationFadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animationFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
