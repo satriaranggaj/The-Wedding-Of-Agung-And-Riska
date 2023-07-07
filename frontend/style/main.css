@@ -167,7 +167,11 @@ body {
   color: #fbf8f8;
 }
 
-.container.induk #dalil {
+.container.induk .content-isi {
+  display: none;
+}
+
+.container.induk .content-isi #dalil {
   width: 100%;
   max-height: 325px;
   color: #7d684c;
@@ -175,15 +179,15 @@ body {
           animation: animationFadeIn 1s ease 1 forwards;
 }
 
-.container.induk #dalil div {
+.container.induk .content-isi #dalil div {
   margin: 20px;
 }
 
-.container.induk #dalil div p {
+.container.induk .content-isi #dalil div p {
   font-size: calc(.2vw + .8rem);
 }
 
-.container.induk #couple {
+.container.induk .content-isi #couple {
   width: 100%;
   max-height: 500px;
   color: #7d684c;
@@ -194,61 +198,61 @@ body {
   padding: 50px 0 50px 0;
 }
 
-.container.induk #couple .salam {
+.container.induk .content-isi #couple .salam {
   text-align: start;
 }
 
-.container.induk #couple .salam h3 {
+.container.induk .content-isi #couple .salam h3 {
   font-family: 'Caveat', cursive;
   margin: 15px 25px;
 }
 
-.container.induk #couple .sambutan {
+.container.induk .content-isi #couple .sambutan {
   text-align: start;
   margin: 10px 25px;
 }
 
-.container.induk #couple .sambutan p {
+.container.induk .content-isi #couple .sambutan p {
   font-size: calc(.2vw + .8rem);
 }
 
-.container.induk #couple .mempelai {
+.container.induk .content-isi #couple .mempelai {
   margin: 25px 45px 0 45px;
 }
 
-.container.induk #couple .mempelai .mempelai-pria {
+.container.induk .content-isi #couple .mempelai .mempelai-pria {
   width: 100%;
   text-align: start;
 }
 
-.container.induk #couple .mempelai .mempelai-pria h3 {
+.container.induk .content-isi #couple .mempelai .mempelai-pria h3 {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #couple .mempelai .mempelai-pria p {
+.container.induk .content-isi #couple .mempelai .mempelai-pria p {
   font-size: calc(.2vw + .8rem);
   font-weight: lighter;
 }
 
-.container.induk #couple .mempelai .and {
+.container.induk .content-isi #couple .mempelai .and {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #couple .mempelai .mempelai-wanita {
+.container.induk .content-isi #couple .mempelai .mempelai-wanita {
   width: 100%;
   text-align: end;
 }
 
-.container.induk #couple .mempelai .mempelai-wanita h3 {
+.container.induk .content-isi #couple .mempelai .mempelai-wanita h3 {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #couple .mempelai .mempelai-wanita p {
+.container.induk .content-isi #couple .mempelai .mempelai-wanita p {
   font-size: calc(.2vw + .8rem);
   font-weight: lighter;
 }
 
-.container.induk #tanggal {
+.container.induk .content-isi #tanggal {
   width: 100%;
   height: 300px;
   padding: 75px 25px;
@@ -256,11 +260,11 @@ body {
   color: #fbf8f8;
 }
 
-.container.induk #tanggal .title {
+.container.induk .content-isi #tanggal .title {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #tanggal .hitung-mundur {
+.container.induk .content-isi #tanggal .hitung-mundur {
   margin: 25px auto;
   font-size: calc(1vw + 1.5rem);
   display: -webkit-box;
@@ -271,7 +275,7 @@ body {
           justify-content: center;
 }
 
-.container.induk #tanggal .hitung-mundur span {
+.container.induk .content-isi #tanggal .hitung-mundur span {
   width: 75px;
   margin: 2.5px;
   text-align: center;
@@ -288,33 +292,33 @@ body {
           flex-direction: column;
 }
 
-.container.induk #tanggal .hitung-mundur span:after {
+.container.induk .content-isi #tanggal .hitung-mundur span:after {
   font-family: 'Caveat', cursive;
   font-size: calc(.2vw + .8rem);
   color: #7d684c;
 }
 
-.container.induk #tanggal .hitung-mundur span:nth-child(1):after {
+.container.induk .content-isi #tanggal .hitung-mundur span:nth-child(1):after {
   content: "Hari";
 }
 
-.container.induk #tanggal .hitung-mundur span:nth-child(2):after {
+.container.induk .content-isi #tanggal .hitung-mundur span:nth-child(2):after {
   content: "Jam";
 }
 
-.container.induk #tanggal .hitung-mundur span:nth-child(3):after {
+.container.induk .content-isi #tanggal .hitung-mundur span:nth-child(3):after {
   content: "Menit";
 }
 
-.container.induk #tanggal .hitung-mundur span:nth-child(4):after {
+.container.induk .content-isi #tanggal .hitung-mundur span:nth-child(4):after {
   content: "Detik";
 }
 
-.container.induk #tanggal .tanggal p {
+.container.induk .content-isi #tanggal .tanggal p {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #rundown {
+.container.induk .content-isi #rundown {
   width: 100%;
   min-height: 535px;
   color: #fbf8f8;
@@ -325,7 +329,7 @@ body {
   padding: 50px 0 50px 0;
 }
 
-.container.induk #rundown .akad {
+.container.induk .content-isi #rundown .akad {
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,16 +349,16 @@ body {
   background-color: #7d684c;
 }
 
-.container.induk #rundown .akad h3 {
+.container.induk .content-isi #rundown .akad h3 {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #rundown .akad p {
+.container.induk .content-isi #rundown .akad p {
   margin: 0;
   font-size: calc(.2vw + .8rem);
 }
 
-.container.induk #rundown .resepsi {
+.container.induk .content-isi #rundown .resepsi {
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,16 +378,16 @@ body {
   background-color: #7d684c;
 }
 
-.container.induk #rundown .resepsi h3 {
+.container.induk .content-isi #rundown .resepsi h3 {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #rundown .resepsi p {
+.container.induk .content-isi #rundown .resepsi p {
   margin: 0;
   font-size: calc(.2vw + .8rem);
 }
 
-.container.induk #lokasi {
+.container.induk .content-isi #lokasi {
   width: 100%;
   height: 750px;
   display: -webkit-box;
@@ -400,13 +404,13 @@ body {
   background-color: #fbf8f8;
 }
 
-.container.induk #lokasi .title {
+.container.induk .content-isi #lokasi .title {
   color: #7d684c;
   font-family: 'Caveat', cursive;
   margin-bottom: 25px;
 }
 
-.container.induk #lokasi .map {
+.container.induk .content-isi #lokasi .map {
   background-color: #fbf8f8;
   height: 550px;
   width: 85%;
@@ -415,14 +419,14 @@ body {
   border-radius: 10px;
 }
 
-.container.induk #lokasi .map p {
+.container.induk .content-isi #lokasi .map p {
   color: #7d684c;
   font-size: calc(.2vw + .8rem);
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.container.induk #lokasi .map .button-map {
+.container.induk .content-isi #lokasi .map .button-map {
   cursor: pointer;
   width: 150px;
   height: 35px;
@@ -435,7 +439,7 @@ body {
   transition: .5s;
 }
 
-.container.induk #lokasi .map .button-map a {
+.container.induk .content-isi #lokasi .map .button-map a {
   color: #7d684c;
   font-weight: normal;
   text-decoration: none;
@@ -443,15 +447,15 @@ body {
   transition: .5s;
 }
 
-.container.induk #lokasi .map .button-map:hover {
+.container.induk .content-isi #lokasi .map .button-map:hover {
   background-color: #7d684c;
 }
 
-.container.induk #lokasi .map .button-map:hover a {
+.container.induk .content-isi #lokasi .map .button-map:hover a {
   color: #fbf8f8;
 }
 
-.container.induk #amplop {
+.container.induk .content-isi #amplop {
   width: 100%;
   height: 500px;
   padding: 50px 35px;
@@ -472,19 +476,19 @@ body {
           align-items: center;
 }
 
-.container.induk #amplop .title h2 {
+.container.induk .content-isi #amplop .title h2 {
   font-family: 'Caveat', cursive;
 }
 
-.container.induk #amplop .ucapan-syukur {
+.container.induk .content-isi #amplop .ucapan-syukur {
   margin-bottom: 25px;
 }
 
-.container.induk #amplop .ucapan-syukur p {
+.container.induk .content-isi #amplop .ucapan-syukur p {
   font-size: calc(.2vw + .8rem);
 }
 
-.container.induk #amplop .rekening {
+.container.induk .content-isi #amplop .rekening {
   text-align: start;
   width: 85%;
   padding: 25px;
@@ -493,7 +497,7 @@ body {
   border-radius: 25px;
 }
 
-.container.induk #amplop .rekening .agung .nomor {
+.container.induk .content-isi #amplop .rekening .agung .nomor {
   width: 100%;
   height: 25px;
   display: -webkit-box;
@@ -502,16 +506,16 @@ body {
   margin-bottom: 15px;
 }
 
-.container.induk #amplop .rekening .agung .nomor a {
+.container.induk .content-isi #amplop .rekening .agung .nomor a {
   text-decoration: none;
   color: black;
 }
 
-.container.induk #amplop .rekening .agung .nomor p {
+.container.induk .content-isi #amplop .rekening .agung .nomor p {
   margin-left: 15px;
 }
 
-.container.induk #amplop .rekening .riska .nomor {
+.container.induk .content-isi #amplop .rekening .riska .nomor {
   width: 100%;
   height: 25px;
   display: -webkit-box;
@@ -519,28 +523,28 @@ body {
   display: flex;
 }
 
-.container.induk #amplop .rekening .riska .nomor a {
+.container.induk .content-isi #amplop .rekening .riska .nomor a {
   text-decoration: none;
   color: black;
 }
 
-.container.induk #amplop .rekening .riska .nomor p {
+.container.induk .content-isi #amplop .rekening .riska .nomor p {
   margin-left: 15px;
 }
 
-.container.induk footer {
+.container.induk .content-isi footer {
   width: 100%;
   height: 100px;
   text-align: center;
   background-color: #fbf8f8;
 }
 
-.container.induk footer p {
+.container.induk .content-isi footer p {
   font-size: calc(.2vw + .8rem);
   color: #7d684c;
 }
 
-.container.induk footer p a {
+.container.induk .content-isi footer p a {
   color: #7d684c;
 }
 

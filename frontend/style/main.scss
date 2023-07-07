@@ -132,410 +132,413 @@ body{
             }
         }
     }
-    #dalil{
-        width: 100%;
-        max-height: 325px;
-        color: #7d684c;
-        animation: animationFadeIn 1s ease 1 forwards;
+    .content-isi{
+        display: none;
+        #dalil{
+            width: 100%;
+            max-height: 325px;
+            color: #7d684c;
+            animation: animationFadeIn 1s ease 1 forwards;
 
-        div{
-            margin: 20px;
+            div{
+                margin: 20px;
 
-            p{
-                font-size: calc(.2vw + .8rem);
+                p{
+                    font-size: calc(.2vw + .8rem);
+                }
             }
         }
-    }
-    #couple{
-        width: 100%;
-        max-height: 500px;
-        color: #7d684c;
-        background-image: url(../img/background/background-content.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 50px 0 50px 0;
+        #couple{
+            width: 100%;
+            max-height: 500px;
+            color: #7d684c;
+            background-image: url(../img/background/background-content.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 50px 0 50px 0;
 
-        .salam{
-            text-align: start;
-            h3{
-                font-family: 'Caveat', cursive;
-                margin: 15px 25px;
-            }
-        }
-        .sambutan{
-            text-align: start;
-            margin: 10px 25px;
-
-            p{
-                font-size: calc(.2vw + .8rem);
-            }
-        }
-        .mempelai{
-            margin: 25px 45px 0 45px;
-
-            .mempelai-pria{
-                width: 100%;
+            .salam{
                 text-align: start;
                 h3{
-                    font-family: 'Caveat', cursive;  
-                }
-                p{
-                    font-size: calc(.2vw + .8rem);
-                    font-weight: lighter;
+                    font-family: 'Caveat', cursive;
+                    margin: 15px 25px;
                 }
             }
-            .and{
+            .sambutan{
+                text-align: start;
+                margin: 10px 25px;
+
+                p{
+                    font-size: calc(.2vw + .8rem);
+                }
+            }
+            .mempelai{
+                margin: 25px 45px 0 45px;
+
+                .mempelai-pria{
+                    width: 100%;
+                    text-align: start;
+                    h3{
+                        font-family: 'Caveat', cursive;  
+                    }
+                    p{
+                        font-size: calc(.2vw + .8rem);
+                        font-weight: lighter;
+                    }
+                }
+                .and{
+                    font-family: 'Caveat', cursive;
+                }
+                .mempelai-wanita{
+                    width: 100%;
+                    text-align: end;
+
+                    h3{
+                        font-family: 'Caveat', cursive;  
+                    }
+                    p{
+                        font-size: calc(.2vw + .8rem);
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+        #tanggal{
+            width: 100%;
+            height: 300px;
+            padding: 75px 25px;
+            background-color: #7d684c;
+            color: #fbf8f8;
+
+            .title{
                 font-family: 'Caveat', cursive;
             }
-            .mempelai-wanita{
-                width: 100%;
-                text-align: end;
-
-                h3{
-                    font-family: 'Caveat', cursive;  
+            .hitung-mundur{
+                margin: 25px auto;
+                font-size: calc(1vw + 1.5rem);
+                display: flex;
+                justify-content: center;
+                
+                span{
+                    width: 75px;
+                    margin: 2.5px;
+                    text-align: center;
+                    padding: 0 15px;
+                    background-color: #fbf8f8;
+                    color: #7d684c;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
                 }
-                p{
+                span:after{
+                    font-family: 'Caveat', cursive;
                     font-size: calc(.2vw + .8rem);
-                    font-weight: lighter;
+                    color: #7d684c;
+                }
+                span:nth-child(1):after{
+                    content: "Hari";
+                }
+                span:nth-child(2):after{
+                    content: "Jam";
+                }
+                span:nth-child(3):after{
+                    content: "Menit";
+                }
+                span:nth-child(4):after{
+                    content: "Detik";
+                }
+            }
+            .tanggal{
+                p{
+                    font-family: 'Caveat', cursive;
                 }
             }
         }
-    }
-    #tanggal{
-        width: 100%;
-        height: 300px;
-        padding: 75px 25px;
-        background-color: #7d684c;
-        color: #fbf8f8;
+        #rundown{
+            width: 100%;
+            min-height: 535px;
+            color: #fbf8f8;
+            background-image: url(../img/background/background-content.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 50px 0 50px 0;
 
-        .title{
-            font-family: 'Caveat', cursive;
-        }
-        .hitung-mundur{
-            margin: 25px auto;
-            font-size: calc(1vw + 1.5rem);
-            display: flex;
-            justify-content: center;
-            
-            span{
-                width: 75px;
-                margin: 2.5px;
-                text-align: center;
-                padding: 0 15px;
-                background-color: #fbf8f8;
-                color: #7d684c;
-                border-radius: 10px;
+            .akad{
+                float: left;
                 display: flex;
                 flex-direction: column;
-            }
-            span:after{
-                font-family: 'Caveat', cursive;
-                font-size: calc(.2vw + .8rem);
-                color: #7d684c;
-            }
-            span:nth-child(1):after{
-                content: "Hari";
-            }
-            span:nth-child(2):after{
-                content: "Jam";
-            }
-            span:nth-child(3):after{
-                content: "Menit";
-            }
-            span:nth-child(4):after{
-                content: "Detik";
-            }
-        }
-        .tanggal{
-            p{
-                font-family: 'Caveat', cursive;
-            }
-        }
-    }
-    #rundown{
-        width: 100%;
-        min-height: 535px;
-        color: #fbf8f8;
-        background-image: url(../img/background/background-content.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 50px 0 50px 0;
+                justify-content: center;
+                width: 85%;
+                height: 200px;
+                margin: 10px 0;
+                text-align: start;
+                padding: 0 0 0 15px;
+                background-color: #7d684c;
 
-        .akad{
-            float: left;
+                h3{
+                    font-family: 'Caveat', cursive;
+                }
+                p{
+                    margin: 0;
+                    font-size: calc(.2vw + .8rem);
+                }
+            }
+            .resepsi{
+                float: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 85%;
+                height: 200px;
+                margin: 10px 0;
+                text-align: end;
+                padding: 0 15px 0 0;
+                background-color: #7d684c;
+
+                h3{
+                    font-family: 'Caveat', cursive;
+                }
+                p{
+                    margin: 0;
+                    font-size: calc(.2vw + .8rem);
+                }
+            }
+        }
+        #lokasi{
+            width: 100%;
+            height: 750px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            width: 85%;
-            height: 200px;
-            margin: 10px 0;
-            text-align: start;
-            padding: 0 0 0 15px;
-            background-color: #7d684c;
-
-            h3{
-                font-family: 'Caveat', cursive;
-            }
-            p{
-                margin: 0;
-                font-size: calc(.2vw + .8rem);
-            }
-        }
-        .resepsi{
-            float: right;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 85%;
-            height: 200px;
-            margin: 10px 0;
-            text-align: end;
-            padding: 0 15px 0 0;
-            background-color: #7d684c;
-
-            h3{
-                font-family: 'Caveat', cursive;
-            }
-            p{
-                margin: 0;
-                font-size: calc(.2vw + .8rem);
-            }
-        }
-    }
-    #lokasi{
-        width: 100%;
-        height: 750px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 65px 0 0 0;
-        background-color: #fbf8f8;
-
-        .title{
-            color: #7d684c;
-            font-family: 'Caveat', cursive;
-            margin-bottom: 25px;
-        }
-        .map{
+            align-items: center;
+            padding: 65px 0 0 0;
             background-color: #fbf8f8;
-            height: 550px;
-            width: 85%;
-            overflow: hidden;
-            border: solid 3px #7d684c;
-            border-radius: 10px;
 
-            p{
+            .title{
                 color: #7d684c;
-                font-size: calc(.2vw + .8rem);
-                margin-top:  25px;
+                font-family: 'Caveat', cursive;
                 margin-bottom: 25px;
             }
-            .button-map{
-                cursor: pointer;
-                width: 150px;
-                height: 35px;
-                margin: auto;
-                text-align: center;
-                line-height: 30px;
-                border: #7d684c solid 2px;
-                border-radius: 35px;
-                transition: .5s;
-    
-                a{
+            .map{
+                background-color: #fbf8f8;
+                height: 550px;
+                width: 85%;
+                overflow: hidden;
+                border: solid 3px #7d684c;
+                border-radius: 10px;
+
+                p{
                     color: #7d684c;
-                    font-weight: normal;
-                    text-decoration: none;
+                    font-size: calc(.2vw + .8rem);
+                    margin-top:  25px;
+                    margin-bottom: 25px;
+                }
+                .button-map{
+                    cursor: pointer;
+                    width: 150px;
+                    height: 35px;
+                    margin: auto;
+                    text-align: center;
+                    line-height: 30px;
+                    border: #7d684c solid 2px;
+                    border-radius: 35px;
                     transition: .5s;
+        
+                    a{
+                        color: #7d684c;
+                        font-weight: normal;
+                        text-decoration: none;
+                        transition: .5s;
+                    }
+                }
+                .button-map:hover{
+                    background-color: #7d684c;
+        
+                    a{
+                        color: #fbf8f8;
+                    }
                 }
             }
-            .button-map:hover{
-                background-color: #7d684c;
-    
-                a{
-                    color: #fbf8f8;
+
+        }
+        #amplop{
+            width: 100%;
+            height: 500px;
+            padding: 50px 35px;
+            color: #fbf8f8;
+            background-color: #7d684c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title{
+                h2{
+                    font-family: 'Caveat', cursive;
+                }
+            }
+            .ucapan-syukur{
+                margin-bottom: 25px;
+                p{
+                    font-size: calc(.2vw + .8rem);
+                }
+            }
+            .rekening{
+                text-align: start;
+                width: 85%;
+                padding: 25px;
+                background-color: #fbf8f8;
+                color: #7d684c;
+                border-radius: 25px;
+                .agung{
+                    .nomor{
+                        width: 100%;
+                        height: 25px;
+                        display: flex;
+                        margin-bottom: 15px;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        p{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                .riska{
+                    .nomor{
+                        width: 100%;
+                        height: 25px;
+                        display: flex;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        p{
+                            margin-left: 15px;
+                        }
+                    }
                 }
             }
         }
+        // #kartu-ucapan{
+        //     width: 100%;
+        //     height: 850px;
+        //     padding: 50px 0px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
 
-    }
-    #amplop{
-        width: 100%;
-        height: 500px;
-        padding: 50px 35px;
-        color: #fbf8f8;
-        background-color: #7d684c;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        //     .title{
+        //         margin-bottom: 5px;
+        //         h2{
+        //             font-family: 'Caveat', cursive;
+        //             color: #7d684c;
+        //         }
+        //     }
+        //     .subtitle{
+        //         margin-bottom: 25px;
+        //         p{
+        //             color: #7d684c;
+        //             font-size: calc(.2vw + .8rem);
+        //         }
+        //     }
+        //     .form-ucapan{
+        //         width: 85%;
+        //         height: 750px;
+        //         background-color: #7d684c;
+        //         padding: 25px 25px;
+        //         color: #fbf8f8;
+        //         border-radius: 10px;
+        //     }
+        //     form#greeting-card-form{
+        //         width: 100%;
+        //         height: 250px;
+        //         display: flex;
+        //         flex-direction: column;
+        //         align-items: start;
 
-        .title{
-            h2{
-                font-family: 'Caveat', cursive;
-            }
-        }
-        .ucapan-syukur{
-            margin-bottom: 25px;
+        //         label{
+        //             margin-top: 15px;
+        //         }
+        //         input{
+        //             width: 100%;
+        //             border-radius: 5px;
+        //             border: none;
+        //         }
+        //         textarea{
+        //             width: 100%;
+        //             height: 100px;
+        //             border-radius: 5px;
+        //             border: none;
+        //         }
+        //         button{
+        //             margin-top: 25px;
+        //             width: 75px;
+        //             height: 35px;
+        //             color: #fbf8f8;
+        //             background-color: transparent;
+        //             border: solid 3px #fbf8f8;
+        //             border-radius: 35px;
+        //             transition: .5s;
+        //         }
+        //         button:hover{
+        //             margin-top: 25px;
+        //             width: 75px;
+        //             height: 35px;
+        //             color: #7d684c;
+        //             background-color: #fbf8f8;
+        //             border: solid 3px #fbf8f8;
+        //             border-radius: 35px;
+        //         }
+        //     }
+        //     #scroll-kartu{
+        //         margin-top: 25px;
+        //         width: 100%;
+        //         height: 350px;
+        //         overflow-y: scroll;
+
+        //         .greeting-card{
+        //             width: 95%;
+        //             height: auto;
+        //             padding: 15px 35px;
+        //             text-align: start;
+        //             background-color: #fbf8f8;
+        //             color: black;
+        //             border-radius: 5px;
+        //             margin: 5px 0;
+
+        //             h6{
+        //                 margin: 0;
+        //             }
+        //             hr{
+        //                 width: 100%;
+        //                 margin: 0;
+        //             }
+        //             p{
+        //                 margin: 0;
+        //                 font-weight: lighter;
+        //             }
+        //         }
+        //     }
+        // }
+        footer{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            background-color: #fbf8f8;
+
             p{
                 font-size: calc(.2vw + .8rem);
-            }
-        }
-        .rekening{
-            text-align: start;
-            width: 85%;
-            padding: 25px;
-            background-color: #fbf8f8;
-            color: #7d684c;
-            border-radius: 25px;
-            .agung{
-                .nomor{
-                    width: 100%;
-                    height: 25px;
-                    display: flex;
-                    margin-bottom: 15px;
-
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-                    p{
-                        margin-left: 15px;
-                    }
-                }
-            }
-            .riska{
-                .nomor{
-                    width: 100%;
-                    height: 25px;
-                    display: flex;
-
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-                    p{
-                        margin-left: 15px;
-                    }
-                }
-            }
-        }
-    }
-    // #kartu-ucapan{
-    //     width: 100%;
-    //     height: 850px;
-    //     padding: 50px 0px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     .title{
-    //         margin-bottom: 5px;
-    //         h2{
-    //             font-family: 'Caveat', cursive;
-    //             color: #7d684c;
-    //         }
-    //     }
-    //     .subtitle{
-    //         margin-bottom: 25px;
-    //         p{
-    //             color: #7d684c;
-    //             font-size: calc(.2vw + .8rem);
-    //         }
-    //     }
-    //     .form-ucapan{
-    //         width: 85%;
-    //         height: 750px;
-    //         background-color: #7d684c;
-    //         padding: 25px 25px;
-    //         color: #fbf8f8;
-    //         border-radius: 10px;
-    //     }
-    //     form#greeting-card-form{
-    //         width: 100%;
-    //         height: 250px;
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: start;
-
-    //         label{
-    //             margin-top: 15px;
-    //         }
-    //         input{
-    //             width: 100%;
-    //             border-radius: 5px;
-    //             border: none;
-    //         }
-    //         textarea{
-    //             width: 100%;
-    //             height: 100px;
-    //             border-radius: 5px;
-    //             border: none;
-    //         }
-    //         button{
-    //             margin-top: 25px;
-    //             width: 75px;
-    //             height: 35px;
-    //             color: #fbf8f8;
-    //             background-color: transparent;
-    //             border: solid 3px #fbf8f8;
-    //             border-radius: 35px;
-    //             transition: .5s;
-    //         }
-    //         button:hover{
-    //             margin-top: 25px;
-    //             width: 75px;
-    //             height: 35px;
-    //             color: #7d684c;
-    //             background-color: #fbf8f8;
-    //             border: solid 3px #fbf8f8;
-    //             border-radius: 35px;
-    //         }
-    //     }
-    //     #scroll-kartu{
-    //         margin-top: 25px;
-    //         width: 100%;
-    //         height: 350px;
-    //         overflow-y: scroll;
-
-    //         .greeting-card{
-    //             width: 95%;
-    //             height: auto;
-    //             padding: 15px 35px;
-    //             text-align: start;
-    //             background-color: #fbf8f8;
-    //             color: black;
-    //             border-radius: 5px;
-    //             margin: 5px 0;
-
-    //             h6{
-    //                 margin: 0;
-    //             }
-    //             hr{
-    //                 width: 100%;
-    //                 margin: 0;
-    //             }
-    //             p{
-    //                 margin: 0;
-    //                 font-weight: lighter;
-    //             }
-    //         }
-    //     }
-    // }
-    footer{
-        width: 100%;
-        height: 100px;
-        text-align: center;
-        background-color: #fbf8f8;
-
-        p{
-            font-size: calc(.2vw + .8rem);
-            color: #7d684c;
-
-            a{
                 color: #7d684c;
+
+                a{
+                    color: #7d684c;
+                }
             }
         }
     }

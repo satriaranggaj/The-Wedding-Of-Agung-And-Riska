@@ -1,6 +1,7 @@
 const navbar = document.querySelector('ul.nav');
 const induk = document.querySelector('div.container.induk');
 const cover = document.getElementById('cover')
+const contentIsi = document.querySelector('.content-isi')
 
 function buka(){
     navbar.style.visibility = 'visible';
@@ -11,6 +12,7 @@ function buka(){
     cover.style.visibility = 'hidden';
     cover.style.opacity = '0';
     cover.style.height = '0';
+    contentIsi.style.display = 'block';
 
     if (audio.paused) {
       audio.play();
